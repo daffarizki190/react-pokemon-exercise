@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+# Pokemon App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi web Pokemon yang dibangun menggunakan **React**, **TypeScript**, dan **Vite**. Aplikasi ini memungkinkan pengguna untuk menjelajahi daftar Pokemon, melihat detail setiap Pokemon, serta melakukan pencarian dan pengurutan.
 
-Currently, two official plugins are available:
+## Fitur
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Daftar Pokemon**: Menampilkan daftar Pokemon dalam tampilan list dan grid.
+- **Pencarian**: Fitur pencarian untuk menemukan Pokemon berdasarkan nama.
+- **Sorting**: Mengurutkan Pokemon berdasarkan nama atau atribut lainnya.
+- **Halaman Detail**: Menampilkan informasi lengkap tentang setiap Pokemon, termasuk statistik kesehatan, serangan, dan pertahanan.
+- **Tema Gelap**: Desain yang nyaman untuk dilihat dengan tema gelap.
 
-## Expanding the ESLint configuration
+## Teknologi yang Digunakan
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**: Library untuk membangun antarmuka pengguna.
+- **TypeScript**: Superset dari JavaScript yang menambahkan tipe statis.
+- **Vite**: Build tool yang cepat dan efisien untuk pengembangan aplikasi.
+- **React Router DOM**: Untuk navigasi antar halaman.
+- **Axios**: Untuk melakukan HTTP request ke PokeAPI.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Instalasi
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Ikuti langkah-langkah berikut untuk menginstal dan menjalankan aplikasi ini secara lokal:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone repositori ini**:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/username/pokemon-app.git
+   cd pokemon-app```
+
+
+2. **Instal dependensi**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Jalankan aplikasi**:
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Buka aplikasi di browser**:\
+   Akses http://localhost:3000 untuk melihat aplikasi.
+
+## Cara Menggunakan
+
+- **Menjelajahi Daftar Pokemon**: Setelah aplikasi dimuat, kamu akan melihat daftar Pokemon. Kamu bisa beralih antara tampilan list dan grid.
+- **Mencari Pokemon**: Gunakan fitur pencarian di bagian atas untuk menemukan Pokemon tertentu.
+- **Melihat Detail Pokemon**: Klik pada nama Pokemon untuk melihat informasi lengkapnya.
+
+## Kontribusi
+
+Jika kamu ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
+
+1. Fork repositori ini.
+2. Buat branch baru untuk fitur atau perbaikan yang ingin kamu tambahkan:
+
+   ```bash
+   git checkout -b fitur-baru
+   ```
+3. Lakukan perubahan dan commit:
+
+   ```bash
+   git commit -m "Menambahkan fitur baru"
+   ```
+4. Push ke branch:
+
+   ```bash
+   git push origin fitur-baru
+   ```
